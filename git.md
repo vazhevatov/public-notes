@@ -15,22 +15,22 @@ git config --list --show-origin
 
 git remote -v
 git status
-git add __filename__
+git add **filename**
 git commit -m "commit message"
 git log
 git push
-git blame __filename__
+git blame **filename**
 git fetch
 git merge
 
-git checkout -- __filename__
+git checkout -- **filename**
 git checkout .
 git clean -xdf
 
 git reset HEAD^^ ==(HEAD~2) ^^ or ~2 = number of the commits==
-git reset -- __filename__
+git reset -- **filename**
 
 # BRANCHING
 
-git branch -b __branch_name__  ==create branch branch_name and checkout to this branch==
-git branch __branch_name__  ==checkout to branch_name==
+git branch -b **branch_name** ==create branch branch_name and checkout to this branch==
+git branch -d **branch_name** ==delete branch_name==
